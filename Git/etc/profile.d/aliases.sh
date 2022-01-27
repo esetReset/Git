@@ -4,6 +4,7 @@
 # --show-control-chars: help showing Korean or accented characters
 alias ls='ls -F --color=auto --show-control-chars'
 alias ll='ls -l'
+alias la='ls -la'
 
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gl1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
@@ -11,7 +12,9 @@ alias gl2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold b
 alias gl10="gl -n10"
 alias gb='git branch'
 alias gs='git status'
-
+alias gpl='git pull'
+alias gps='git push'
+alias gfa='git fetch --all'
 
 case "$TERM" in
 xterm*)
