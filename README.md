@@ -8,7 +8,7 @@ $ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 $ eval "$(ssh-agent -s)"
 ```
-* Add key
+* Add private key
 ```
 $ ssh-add ~/.ssh/name of key
 ```
