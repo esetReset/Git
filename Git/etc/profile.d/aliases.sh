@@ -15,6 +15,7 @@ alias gs='git status'
 alias gpl='git pull'
 alias gps='git push'
 alias gfa='git fetch --all'
+alias ga='git add .'
 
 case "$TERM" in
 xterm*)
