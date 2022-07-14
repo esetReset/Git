@@ -16,7 +16,6 @@ $ ssh-add ~/.ssh/name of key
 ```
 #/bin/bash 
 unset TZ 
-cd /d/Git_Jupiter/tt_TA
 env=~/.ssh/agent.env
 agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
 
@@ -37,4 +36,8 @@ elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
 fi
 
 unset env 
+```
+* To store your keys permanetly in the agent create ~/.ssh/config and put this line for each key (for example key with name git)
+```
+IdentityFile ~/.ssh/git
 ```
